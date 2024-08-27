@@ -11,15 +11,17 @@
 <body bgcolor="#f3f3f3">
 	<div style="display: grid; place-items: center;">
 		<?php
-		// Increment and Decrement Operators
-		// ++$x, $x++, --$x, $x--	
+		// If, Else, Elseif
+		$first_name = "John";
+		$age = 22;
 
-		$x = 5;
-		echo "x = $x <br>";
-		$x++;
-		echo "x++ = $x <br>";
-		$x--;
-		echo "x-- = $x <br>";
+		if ($first_name === "John") {
+			echo "Hello $first_name";
+		} elseif ($first_name == "Sally") {
+			echo "Hello $first_name";
+		} else {
+			echo "Hello User";
+		}
 		?>
 	</div>
 </body>
