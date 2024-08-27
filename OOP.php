@@ -42,6 +42,14 @@ $empleados = [];
 $empleados[] = new Empleado('Victor', 27, 'programador');
 $empleados[] = new Empleado('Juan', 30, 'diseñador');
 
+print($empleados[1]);
+
+for ($i = 0; $i < count($empleados); $i++) {
+	print($empleados[$i]->getNombre() . "\n");
+	print($empleados[$i]->getEdad() . "\n");
+	print($empleados[$i]->getPuesto() . "\n");
+}
+
 ?>
 
 <h1> Herencia en PHP </h1>
