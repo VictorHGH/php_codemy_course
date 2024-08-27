@@ -1,57 +1,19 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
 
-declare(strict_types=1);
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Codemy_course</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
 
-class Persona
-{
-	public function __construct(
-		private string $nombre,
-		private int $edad,
-	) {}
+<body bgcolor="#f3f3f3">
+	<center>
+		<h1>
+			<?php echo "Hello World!"; ?>
+		</h1>
+	</center>
+</body>
 
-	public function getNombre(): string
-	{
-		return $this->nombre;
-	}
-
-	public function getEdad(): int
-	{
-		return $this->edad;
-	}
-}
-
-class Empleado extends Persona
-{
-	public function __construct(
-		private string $nombre,
-		private int $edad,
-		private string $puesto,
-	) {
-		parent::__construct($nombre, $edad);
-	}
-
-	public function getPuesto(): string
-	{
-		return $this->puesto;
-	}
-}
-
-
-$empleados = [];
-
-$empleados[] = new Empleado('Victor', 27, 'programador');
-$empleados[] = new Empleado('Juan', 30, 'diseñador');
-
-?>
-
-<h1> Herencia en PHP </h1>
-
-<ul>
-	<?php foreach ($empleados as $empleado): ?>
-		<li>
-			<p>Nombre: <?= $empleado->getNombre() ?></p>
-			<p>Edad: <?= $empleado->getEdad() ?></p>
-			<p>Puesto: <?= $empleado->getPuesto() ?></p>
-		</li>
-	<?php endforeach; ?>
-</ul>
+</html>
