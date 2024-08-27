@@ -13,11 +13,14 @@
 		<h1>
 			<?php
 
+			// String
 			$first_name = "John";
-			$agea = 40;
+			// Integer
+			$age = 40;
+			// float
 			$price = 19.95;
-
-			echo $first_name;
+			// Boolean
+			$alive = True;
 			?>
 		</h1>
 	</center>
