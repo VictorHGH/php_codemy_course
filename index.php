@@ -9,22 +9,39 @@
 </head>
 
 <body bgcolor="#f3f3f3">
-	<center>
-		<h1>
-			<?php
+	<div style="display: grid; place-items: center;">
+		<?php
 
-			// Math operators
-			// + addition, - substraction, * multiplication, / division, % modulus, ** exponentiation
+		// Assignment Operators
+		// =, +=, -=, *=, /=, %=, **=
 
-			echo 10 + 10, "\n";
-			echo 10 - 3, "\n";
-			echo 10 * 10, "\n";
-			echo 10 / 2, "\n";
-			echo 10 % 2, "\n";
-			echo 10 ** 2, "\n";
-			?>
-		</h1>
-	</center>
+		$num = 10;
+
+		echo "<h1 style='margin-bottom: 5px'> Num 1: $num</h1>";
+
+		echo "Num 1 += 10: " . $num += 10;
+		echo "<br/>";
+
+		echo "Num 1 -= 5: " . $num -= 5;
+		echo "<br/>";
+
+		echo "Num 1 *= 2: " . $num *= 2;
+		echo "<br/>";
+
+		echo "Num 1 /= 3: " . $num /= 3;
+		echo "<br/>";
+
+		echo "Num 1 **= 2: " . $num **= 2;
+		echo "<br/>";
+
+		echo "Num 1 %= 2: " . $num %= 2;
+		echo "<br/>";
+		?>
+	</div>
 </body>
 
 </html>
+
+<?php
+echo "Hola mundo";
+?>
