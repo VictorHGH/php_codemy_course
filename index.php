@@ -11,7 +11,14 @@
 <body bgcolor="#f3f3f3">
 	<center>
 		<h1>
-			<?php echo "Hello World!"; ?>
+			<?php
+
+			$first_name = "John";
+			$agea = 40;
+			$price = 19.95;
+
+			echo $first_name;
+			?>
 		</h1>
 	</center>
 </body>
