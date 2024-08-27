@@ -11,29 +11,17 @@
 <body bgcolor="#f3f3f3">
 	<div style="display: grid; place-items: center;">
 		<?php
-		// Comparison Operators
-		// == Equal, === Identical, != NotEqual, <> Nto Equal, !== Not Identical
-		// > Greater than, < Less than, >= Greater than or equal to, <= Less than or equal to
+		// Increment and Decrement Operators
+		// ++$x, $x++, --$x, $x--	
 
-		$num1 = 10;
-		$num2 = 2;
-
-		$real_or_not = $num1 == $num2;
-		echo "<h1> $real_or_not </h1>";
+		$x = 5;
+		echo "x = $x <br>";
+		$x++;
+		echo "x++ = $x <br>";
+		$x--;
+		echo "x-- = $x <br>";
 		?>
 	</div>
 </body>
 
 </html>
-
-<?php
-// Comparison Operators
-// == Equal, === Identical, != NotEqual, <> Nto Equal, !== Not Identical
-// > Greater than, < Less than, >= Greater than or equal to, <= Less than or equal to
-
-$num1 = 10;
-$num2 = 2;
-
-$real_or_not = $num1 > $num2;
-echo "<h1>$real_or_not</h1>";
-?>
