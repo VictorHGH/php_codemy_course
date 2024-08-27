@@ -11,31 +11,15 @@
 <body bgcolor="#f3f3f3">
 	<div style="display: grid; place-items: center;">
 		<?php
+		// Comparison Operators
+		// == Equal, === Identical, != NotEqual, <> Nto Equal, !== Not Identical
+		// > Greater than, < Less than, >= Greater than or equal to, <= Less than or equal to
 
-		// Assignment Operators
-		// =, +=, -=, *=, /=, %=, **=
+		$num1 = 10;
+		$num2 = 2;
 
-		$num = 10;
-
-		echo "<h1 style='margin-bottom: 5px'> Num 1: $num</h1>";
-
-		echo "Num 1 += 10: " . $num += 10;
-		echo "<br/>";
-
-		echo "Num 1 -= 5: " . $num -= 5;
-		echo "<br/>";
-
-		echo "Num 1 *= 2: " . $num *= 2;
-		echo "<br/>";
-
-		echo "Num 1 /= 3: " . $num /= 3;
-		echo "<br/>";
-
-		echo "Num 1 **= 2: " . $num **= 2;
-		echo "<br/>";
-
-		echo "Num 1 %= 2: " . $num %= 2;
-		echo "<br/>";
+		$real_or_not = $num1 == $num2;
+		echo "<h1> $real_or_not </h1>";
 		?>
 	</div>
 </body>
@@ -43,5 +27,13 @@
 </html>
 
 <?php
-echo "Hola mundo";
+// Comparison Operators
+// == Equal, === Identical, != NotEqual, <> Nto Equal, !== Not Identical
+// > Greater than, < Less than, >= Greater than or equal to, <= Less than or equal to
+
+$num1 = 10;
+$num2 = 2;
+
+$real_or_not = $num1 > $num2;
+echo "<h1>$real_or_not</h1>";
 ?>
