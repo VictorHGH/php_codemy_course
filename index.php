@@ -13,14 +13,15 @@
 		<h1>
 			<?php
 
-			// String
-			$first_name = "John";
-			// Integer
-			$age = 40;
-			// float
-			$price = 19.95;
-			// Boolean
-			$alive = True;
+			// Math operators
+			// + addition, - substraction, * multiplication, / division, % modulus, ** exponentiation
+
+			echo 10 + 10, "\n";
+			echo 10 - 3, "\n";
+			echo 10 * 10, "\n";
+			echo 10 / 2, "\n";
+			echo 10 % 2, "\n";
+			echo 10 ** 2, "\n";
 			?>
 		</h1>
 	</center>
