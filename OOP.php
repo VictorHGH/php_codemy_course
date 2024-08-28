@@ -2,26 +2,24 @@
 
 declare(strict_types=1);
 
-class Persona
-{
+class Persona {
+
 	public function __construct(
 		private string $nombre,
 		private int $edad,
-	) {}
+	) {
+	}
 
-	public function getNombre(): string
-	{
+	public function getNombre(): string {
 		return $this->nombre;
 	}
 
-	public function getEdad(): int
-	{
+	public function getEdad(): int {
 		return $this->edad;
 	}
 }
 
-class Empleado extends Persona
-{
+class Empleado extends Persona {
 	public function __construct(
 		private string $nombre,
 		private int $edad,
@@ -30,8 +28,7 @@ class Empleado extends Persona
 		parent::__construct($nombre, $edad);
 	}
 
-	public function getPuesto(): string
-	{
+	public function getPuesto(): string {
 		return $this->puesto;
 	}
 }
