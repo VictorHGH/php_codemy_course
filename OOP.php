@@ -39,7 +39,7 @@ $empleados = [];
 $empleados[] = new Empleado('Victor', 27, 'programador');
 $empleados[] = new Empleado('Juan', 30, 'diseñador');
 
-print($empleados[1]);
+echo $empleados[0]->getNombre();
 
 for ($i = 0; $i < count($empleados); $i++) {
 	print($empleados[$i]->getNombre() . "\n");
