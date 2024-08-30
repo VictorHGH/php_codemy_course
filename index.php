@@ -11,13 +11,12 @@
 <body bgcolor="#f3f3f3">
 	<div style="display: grid; place-items: center;">
 		<?php
-		// While loop
-		$num = 1;
-		while ($num <= 10) {
-			echo $num . '<br>';
-			$num++;
+		// For loop
+		for ($num = 0; $num <= 10; $num++) {
+			echo "Your num is: $num<br/>";
 		}
 		?>
+
 	</div>
 </body>
 
