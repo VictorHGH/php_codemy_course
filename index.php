@@ -11,18 +11,13 @@
 <body bgcolor="#f3f3f3">
 	<div style="display: grid; place-items: center; margin-top: 30px;">
 		<?php
-		// Associative Arrays and loop through them
-		$fav_color = [
-			"Victor" => "Green",
-			"Juan" => "Blue",
-			"Pedro" => "Red",
-			"Maria" => "Yellow",
-			"Ana" => "Pink"
-		];
 
-		foreach ($fav_color as $key => $value) {
-			echo "The favorite color of $key is $value <br>";
+		// Funtion
+		function greetings(string $name) {
+			echo "Hello There!, $name";
 		}
+
+		greetings("Victor");
 		?>
 
 	</div>
