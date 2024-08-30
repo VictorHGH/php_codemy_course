@@ -11,16 +11,11 @@
 <body bgcolor="#f3f3f3">
 	<div style="display: grid; place-items: center;">
 		<?php
-		// If, Else, Elseif
-		$first_name = "John";
-		$age = 22;
-
-		if ($first_name === "John") {
-			echo "Hello $first_name";
-		} elseif ($first_name == "Sally") {
-			echo "Hello $first_name";
-		} else {
-			echo "Hello User";
+		// While loop
+		$num = 1;
+		while ($num <= 10) {
+			echo $num . '<br>';
+			$num++;
 		}
 		?>
 	</div>
