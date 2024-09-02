@@ -16,13 +16,10 @@ include("variables.php")
 </head>
 
 <body bgcolor="#f3f3f3">
+	<?php require_once("navbar.php") ?>
 	<div style="display: grid; place-items: center; margin-top: 30px;">
 		<?php
-
-		// Including Files!
-		echo $site_title;
-		echo "<br/><br/> My name is $my_name"
-
+			echo $site_title
 		?>
 	</div>
 </body>
