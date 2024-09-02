@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 ?>
 
 <!DOCTYPE html>
@@ -18,11 +19,11 @@ declare(strict_types=1);
 		<?php
 
 		// Funtion
-		function greetings(string $name) {
-			echo "Hello There!, $name";
+		function greetings(string $first_name = "John", string $last_name = "Doe") {
+			echo "Hello There!, $first_name $last_name";
 		}
 
-		greetings("Victor");
+		greetings("Tim", "Smith");
 		?>
 
 	</div>
