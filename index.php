@@ -17,13 +17,19 @@ declare(strict_types=1);
 <body bgcolor="#f3f3f3">
 	<div style="display: grid; place-items: center; margin-top: 30px;">
 		<?php
-
-		// Funtion
-		function greetings(string $first_name = "John", string $last_name = "Doe") {
-			echo "Hello There!, $first_name $last_name";
+		// FizzBuzz
+		// Write a program that prints the numbers from 1 to 100.
+		for ($i = 1; $i <= 100; $i++) {
+			if ($i % 5 == 0 and $i % 3 == 0) {
+				echo "$i. FizzBuzz<br/>";
+			} elseif ($i % 3 == 0) {
+				echo "$i. Fizz<br/>";
+			} elseif ($i % 5 == 0) {
+				echo "$i. Buzz<br/>";
+			} else {
+				echo "$i.<br/>";
+			}
 		}
-
-		greetings("Tim", "Smith");
 		?>
 
 	</div>
