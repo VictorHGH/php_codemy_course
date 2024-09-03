@@ -17,16 +17,27 @@ include("variables.php")
 </head>
 
 <body>
+	<?php require_once("navbar.php") ?>
 	<div class="container">
-		<?php require_once("navbar.php") ?>
-		<h1>Hello, world!</h1>
 
-		<form class="myForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="POST">
-			Name: <input type="text" name="name" />
-			<br />
-			<br />
-			<input type="submit" class="btn btn-secondary">
-		</form>
+		<?php if (!empty($_POST)): ?>
+			<h1 class="name">Hello there, <?php echo htmlspecialchars($_POST["name"]) ?>!</h1>
+			<form class="myForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
+				Name: <input type="text" name="name" />
+				<br>
+				<br>
+				<input type="submit" class="btn btn-secondary">
+			</form>
+		<?php else: ?>
+			<h1>Hello ")</h1>
+			<form class="myForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
+				Name: <input type="text" name="name" />
+				<br>
+				<br>
+				<input type="submit" class="btn btn-secondary">
+			</form>
+		<?php endif; ?>
+
 
 		<p>Copyright (c) <?php echo $my_name; ?> - All Rights Reserved</p>
 	</div>
@@ -46,8 +57,13 @@ include("variables.php")
 		text-align: center;
 	}
 
+	.name {
+		margin-top: 20px;
+		text-align: center;
+	}
+
 	.myForm {
-		margin-top: 40px;
+		margin-top: 20px;
 		text-align: center;
 	}
 
